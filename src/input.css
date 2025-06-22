@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "crimsonPro";
+    src: url("../font/CrimsonPro-VariableFont_wght.ttf");
+}
+
+@theme {
+    --font-crimson: "crimsonPro", sans-serif;
+    --color-grey-1: #EDEDED;
+    --color-golden-1: #CC9933;
+}
