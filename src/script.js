@@ -1,3 +1,4 @@
+// Card model
 const card_model = document.getElementById("card-model");
 const items = card_model.querySelectorAll("div.relative");
 
@@ -51,3 +52,7 @@ document.addEventListener("click", () => {
     activeItem = null;
   }
 });
+
+
+// keunggulan
+
