@@ -26,6 +26,7 @@
 }
 
 @theme {
+    --breakpoint-mobile: 20rem;
     --font-crimson: "crimsonPro", sans-serif;
     --font-dm-serif-display: "dmSerifDisplay";
     --font-roboto-serif: "robotoSerif";

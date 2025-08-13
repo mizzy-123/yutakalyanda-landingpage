@@ -6,23 +6,28 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="w-full fixed z-[100] bg-white h-[120px] flex items-center justify-between px-[5%] shadow-[0px_4px_4px_0px_#00000040]">
+  <header class="w-full fixed top-0 left-0 z-[100] bg-white h-[100px] flex items-center justify-between px-[3%] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[10px] after:bg-transparent after:shadow-[0px_4px_4px_0px_#00000040]">
+    <a class="md:hidden" id="navbar-active" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
+        <path d="M3.28125 8.25H31.7188C32.3228 8.25 32.8125 7.80231 32.8125 7.25V4.75C32.8125 4.19769 32.3228 3.75 31.7188 3.75H3.28125C2.67716 3.75 2.1875 4.19769 2.1875 4.75V7.25C2.1875 7.80231 2.67716 8.25 3.28125 8.25ZM3.28125 18.25H31.7188C32.3228 18.25 32.8125 17.8023 32.8125 17.25V14.75C32.8125 14.1977 32.3228 13.75 31.7188 13.75H3.28125C2.67716 13.75 2.1875 14.1977 2.1875 14.75V17.25C2.1875 17.8023 2.67716 18.25 3.28125 18.25ZM3.28125 28.25H31.7188C32.3228 28.25 32.8125 27.8023 32.8125 27.25V24.75C32.8125 24.1977 32.3228 23.75 31.7188 23.75H3.28125C2.67716 23.75 2.1875 24.1977 2.1875 24.75V27.25C2.1875 27.8023 2.67716 28.25 3.28125 28.25Z" fill="black"/>
+      </svg>
+    </a>
     <img src="/image/logo.png" width="200" alt="">
     <div class="flex items-center gap-8">
-        <li class="flex items-center bg-grey-1 py-0.5 px-6 rounded-full gap-8">
-            <ul><a href="#" class="font-crimson font-medium text-[20px] hover:text-golden-1">PRODUK FAVORIT</a></ul>
-            <ul><a href="#" class="font-crimson font-medium text-[20px] hover:text-golden-1">KEUNGGULAN</a></ul>
-            <ul><a href="#" class="font-crimson font-medium text-[20px] hover:text-golden-1">TENTANG</a></ul>
-            <ul><a href="#" class="font-crimson font-medium text-[20px] hover:text-golden-1">KONTAK</a></ul>
-        </li>
-        <a href="#" class="bg-golden-1 flex items-center justify-center rounded-full px-16 py-2.5 font-crimson text-white text-[20px]">
+        <ul id="show-navbar" class="flex md:flex mobile:hidden md:w-fit md:h-fit md:mt-0 md:flex-row md:static md:items-center md:bg-grey-1 md:py-0.5 md:px-6 md:rounded-full md:gap-8 mobile:absolute mobile:bg-white mobile:left-0 mobile:top-full mobile:w-full mobile:h-screen mobile:px-[5%] mobile:flex-col mobile:gap-4 mobile:mt-6">
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">PRODUK FAVORIT</a></li>
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KEUNGGULAN</a></li>
+            <li><a href="about.html" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">TENTANG</a></li>
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KONTAK</a></li>
+        </ul>
+        <a href="#" class="bg-golden-1 flex items-center justify-center rounded-full md:px-16 py-2.5 font-crimson text-white md:text-[20px] mobile:text-[18px] mobile:px-4">
             TOKO RESMI
         </a>
     </div>
-  </nav>
+  </header>
   <div class="w-full h-full pt-[9%]">
-    <section class="w-full h-[150vh] bg-white relative overflow-x-hidden bg-[url(/image/bg.png)] bg-no-repeat bg-cover bg-center">
-      <div class="absolute inset-0 bg-white/70"></div>
+    <section class="w-full h-[150vh] bg-white relative overflow-x-hidden bg-[url(/image/bg2.png)] bg-no-repeat bg-cover bg-center">
+      <!-- <div class="absolute inset-0 bg-white/50"></div> -->
       <div class="absolute w-full h-full flex flex-col items-center justify-center">
         <p class="text-[150px] font-dm-serif-display text-golden-1">Gaya Satu Nada</p>
         <div class="flex flex-wrap justify-center gap-[16px] w-[65%]">
@@ -93,7 +98,8 @@
       </div>
     </section>
 
-    <section class="w-full h-screen bg-white px-3 py-3 flex flex-col gap-3">
+    <!-- Tidak dipakai -->
+    <!-- <section class="w-full h-screen bg-white px-3 py-3 flex flex-col gap-3">
       <div class="w-full h-28 relative" style="background-image: url('../svg/komponen1.svg')">
         <a class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fit px-6 py-3 flex justify-center items-center rounded-[4px] bg-golden-1" href="#">
           <p class="text-white font-roboto-serif text-[32px]">Keunggulan</p>
@@ -115,7 +121,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="w-full bg-white px-3 flex flex-col gap-3">
       <div class="relative w-full h-[600px] overflow-hidden group">
@@ -164,15 +170,15 @@
     </div>
   </div>
 
-  <footer class="w-full h-[440px] bg-white px-11 mt-14">
+  <footer class="w-full h-[300px] bg-white px-11 mt-14">
     <div class="w-full h-[1px] bg-[#626262]"></div>
-    <div class="w-full h-full mt-[100px] flex gap-12">
+    <div class="w-full h-full mt-[100px] flex md:flex-row mobile:flex-col gap-12">
       <div class="flex-1">
         <img src="/image/logo.png" width="250" alt="">
         <p class="font-roboto-serif text-[20px] mt-6">Di Yutaka, kami percaya bahwa fashion bukan hanya soal penampilan, tapi tentang bagaimana kita terhubung.</p>
       </div>
       <div class="flex-2 grid grid-cols-4 gap-6">
-        <div class="w-full">
+        <div class="w-full md:col-span-1 mobile:col-span-4 md:order-1 mobile:order-3">
           <p class="font-volkhov text-2xl mb-3">Kontak Kami</p>
           <div class="flex">
             <p>📞</p>
@@ -184,18 +190,18 @@
             <p class="font-roboto-serif text-[16px] break-all">info@yutakalyanda.com</p>
           </div>
         </div>
-        <div class="w-full">
+        <div class="w-full md:col-span-1 mobile:col-span-2 md:order-2 mobile:order-1">
           <p class="font-volkhov text-2xl mb-3">Tentang</p>
           <a href="#"><p class="font-roboto-serif text-[20px]">Yutaka</p></a>
           <a href="#"><p class="font-roboto-serif text-[20px]">Produk</p></a>
           <a href="#"><p class="font-roboto-serif text-[20px]">Strategi Penjualan</p></a>
         </div>
-        <div class="w-full">
+        <div class="w-full md:col-span-1 mobile:col-span-2 md:order-3 mobile:order-2">
           <p class="font-volkhov text-2xl mb-3">Lainnya</p>
           <a href="#"><p class="font-roboto-serif text-[20px]">FAQ</p></a>
           <a href="#"><p class="font-roboto-serif text-[20px]">Syarat & kebijakan</p></a>
         </div>
-        <div class="w-full">
+        <div class="w-full md:col-span-1 mobile:col-span-4 md:order-4 mobile:order-4">
           <p class="font-volkhov text-2xl mb-3">Ikuti Media sosial Wastra</p>
           <a href="#"><p class="font-roboto-serif text-[20px]">
             Untuk info terbaru dan inspirasi gaya setiap harinya.    
@@ -229,5 +235,6 @@
   </footer>
   
   <script src="script.js"></script>
+  <script src="navbar.script.js"></script>
 </body>
 </html>

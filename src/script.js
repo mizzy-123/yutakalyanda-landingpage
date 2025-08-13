@@ -1,58 +1,61 @@
-// Card model
-const card_model = document.getElementById("card-model");
-const items = card_model.querySelectorAll("div.relative");
+// const card_model = document.getElementById("card-model");
+// const items = card_model.querySelectorAll("div.relative");
 
-const layouts = [
-  'grid-cols-[2fr_1fr_1fr]',
-  'grid-cols-[1fr_2fr_1fr]',
-  'grid-cols-[1fr_1fr_2fr]'
-];
+// const layouts = [
+//   'grid-cols-[2fr_1fr_1fr]',
+//   'grid-cols-[1fr_2fr_1fr]',
+//   'grid-cols-[1fr_1fr_2fr]'
+// ];
 
-let activeItem = null;
+// let activeItem = null;
 
-items.forEach((item, index) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation(); // Biar klik item gak dianggap klik luar
+// items.forEach((item, index) => {
+//   item.addEventListener("click", (e) => {
+//     e.stopPropagation(); // Biar klik item gak dianggap klik luar
 
-    // Reset semua layout & hover mati
-    layouts.forEach(layout => card_model.classList.remove(layout));
-    card_model.classList.remove("grid-cols-3");
-    items.forEach(it => it.classList.remove("no-hover"));
+//     // Kalau klik item yang sama -> reset
+//     if (activeItem === item) {
+//       resetAll();
+//       return;
+//     }
 
-    // Pasang layout sesuai index
-    card_model.classList.add(layouts[index]);
+//     // Reset layout & hover dulu
+//     layouts.forEach(layout => card_model.classList.remove(layout));
+//     card_model.classList.remove("grid-cols-3");
+//     items.forEach(it => {
+//       it.classList.add("group/item1");
+//       it.querySelector("img").classList.remove("-translate-x-[70%]");
+//       it.querySelector("div.text-card").style.right = "-100%";
+//       it.classList.remove("bg-golden-1");
+//     });
 
-    if (activeItem) {
-        activeItem.classList.add("group/item1");
-        activeItem.querySelector("img").classList.remove("-translate-x-[70%]")
-        activeItem.querySelector("div.text-card").style.right = "-100%";
-        activeItem.classList.remove("bg-golden-1")
-        activeItem = null;
-    }
+//     // Pasang layout sesuai index
+//     card_model.classList.add(layouts[index]);
 
-    // Matikan hover di item aktif
-    item.classList.remove("group/item1");
-    item.querySelector("img").classList.add("-translate-x-[70%]");
-    item.querySelector("div.text-card").style.right = "20px";
-    item.classList.add("bg-golden-1");
-    activeItem = item;
-  });
-});
+//     // Matikan hover & set style di item aktif
+//     item.classList.remove("group/item1");
+//     item.querySelector("img").classList.add("-translate-x-[70%]");
+//     item.querySelector("div.text-card").style.right = "20px";
+//     item.classList.add("bg-golden-1");
 
-// Klik di luar -> reset
-document.addEventListener("click", () => {
-  layouts.forEach(layout => card_model.classList.remove(layout));
-  card_model.classList.add("grid-cols-3");
+//     activeItem = item;
+//   });
+// });
 
-  if (activeItem) {
-    activeItem.classList.add("group/item1");
-    activeItem.querySelector("img").classList.remove("-translate-x-[70%]")
-    activeItem.querySelector("div.text-card").style.right = "-100%";
-    activeItem.classList.remove("bg-golden-1")
-    activeItem = null;
-  }
-});
+// // Klik di luar -> reset
+// document.addEventListener("click", () => {
+//   resetAll();
+// });
 
+// function resetAll() {
+//   layouts.forEach(layout => card_model.classList.remove(layout));
+//   card_model.classList.add("grid-cols-3");
 
-// keunggulan
-
+//   if (activeItem) {
+//     activeItem.classList.add("group/item1");
+//     activeItem.querySelector("img").classList.remove("-translate-x-[70%]");
+//     activeItem.querySelector("div.text-card").style.right = "-100%";
+//     activeItem.classList.remove("bg-golden-1");
+//     activeItem = null;
+//   }
+// }
