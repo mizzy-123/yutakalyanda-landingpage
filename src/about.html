@@ -7,31 +7,31 @@
 </head>
 <body>
   <header class="w-full fixed top-0 left-0 z-[100] bg-white h-[100px] flex items-center justify-between px-[3%] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[10px] after:bg-transparent after:shadow-[0px_4px_4px_0px_#00000040]">
-        <a class="md:hidden" id="navbar-active" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
-            <path d="M3.28125 8.25H31.7188C32.3228 8.25 32.8125 7.80231 32.8125 7.25V4.75C32.8125 4.19769 32.3228 3.75 31.7188 3.75H3.28125C2.67716 3.75 2.1875 4.19769 2.1875 4.75V7.25C2.1875 7.80231 2.67716 8.25 3.28125 8.25ZM3.28125 18.25H31.7188C32.3228 18.25 32.8125 17.8023 32.8125 17.25V14.75C32.8125 14.1977 32.3228 13.75 31.7188 13.75H3.28125C2.67716 13.75 2.1875 14.1977 2.1875 14.75V17.25C2.1875 17.8023 2.67716 18.25 3.28125 18.25ZM3.28125 28.25H31.7188C32.3228 28.25 32.8125 27.8023 32.8125 27.25V24.75C32.8125 24.1977 32.3228 23.75 31.7188 23.75H3.28125C2.67716 23.75 2.1875 24.1977 2.1875 24.75V27.25C2.1875 27.8023 2.67716 28.25 3.28125 28.25Z" fill="black"/>
-          </svg>
+    <a class="lg:hidden" id="navbar-active" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
+        <path d="M3.28125 8.25H31.7188C32.3228 8.25 32.8125 7.80231 32.8125 7.25V4.75C32.8125 4.19769 32.3228 3.75 31.7188 3.75H3.28125C2.67716 3.75 2.1875 4.19769 2.1875 4.75V7.25C2.1875 7.80231 2.67716 8.25 3.28125 8.25ZM3.28125 18.25H31.7188C32.3228 18.25 32.8125 17.8023 32.8125 17.25V14.75C32.8125 14.1977 32.3228 13.75 31.7188 13.75H3.28125C2.67716 13.75 2.1875 14.1977 2.1875 14.75V17.25C2.1875 17.8023 2.67716 18.25 3.28125 18.25ZM3.28125 28.25H31.7188C32.3228 28.25 32.8125 27.8023 32.8125 27.25V24.75C32.8125 24.1977 32.3228 23.75 31.7188 23.75H3.28125C2.67716 23.75 2.1875 24.1977 2.1875 24.75V27.25C2.1875 27.8023 2.67716 28.25 3.28125 28.25Z" fill="black"/>
+      </svg>
+    </a>
+    <img src="/image/logo.png" width="200" alt="">
+    <div class="flex items-center gap-8">
+        <ul id="show-navbar" class="flex lg:flex mobile:hidden lg:w-fit lg:h-fit lg:mt-0 lg:flex-row lg:static lg:items-center lg:bg-grey-1 lg:py-0.5 lg:px-6 lg:rounded-full lg:gap-8 mobile:absolute mobile:bg-white mobile:left-0 mobile:top-full mobile:w-full mobile:h-screen mobile:px-[5%] mobile:flex-col mobile:gap-4 mobile:pt-6">
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">PRODUK FAVORIT</a></li>
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KEUNGGULAN</a></li>
+            <li><a href="about.html" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">TENTANG</a></li>
+            <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KONTAK</a></li>
+        </ul>
+        <a href="#" class="bg-golden-1 flex items-center justify-center rounded-full lg:px-16 py-2.5 font-crimson text-white lg:text-[20px] mobile:text-[18px] mobile:px-4">
+            TOKO RESMI
         </a>
-        <img src="/image/logo.png" width="200" alt="">
-        <div class="flex items-center gap-8">
-            <ul id="show-navbar" class="flex md:flex mobile:hidden md:w-fit md:h-fit md:mt-0 md:flex-row md:static md:items-center md:bg-grey-1 md:py-0.5 md:px-6 md:rounded-full md:gap-8 mobile:absolute mobile:bg-white mobile:left-0 mobile:top-full mobile:w-full mobile:h-screen mobile:px-[5%] mobile:flex-col mobile:gap-4 mobile:mt-6">
-                <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">PRODUK FAVORIT</a></li>
-                <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KEUNGGULAN</a></li>
-                <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">TENTANG</a></li>
-                <li><a href="#" class="font-roboto-serif font-medium text-[20px] hover:text-golden-1">KONTAK</a></li>
-            </ul>
-            <a href="#" class="bg-golden-1 flex items-center justify-center rounded-full md:px-16 py-2.5 font-crimson text-white md:text-[20px] mobile:text-[18px] mobile:px-4">
-                TOKO RESMI
-            </a>
-        </div>
+    </div>
   </header>
 
-  <section class="w-full h-screen bg-golden-1 flex gap-6 px-11 pt-[9%]">
-    <div class="flex-1 flex items-center h-[500px] p-6 rotate-1 bg-white shadow-[-13px_13px_0_0_#875A00]">
+  <section class="w-full md:h-screen mobile:h-fit bg-golden-1 flex md:flex-row mobile:flex-col gap-6 px-11 lg:pt-[9%] md::pt-[30%] mobile:pt-[30%] mobile:pb-6">
+    <div class="flex-1 flex items-center h-[500px] md:p-6 mobile:p-2 rotate-1 bg-white shadow-[-13px_13px_0_0_#875A00]">
       <img class="rotate-[-1.047deg] size-full" src="/image/model_about1.png" alt="">
     </div>
-    <div class="flex-1 flex flex-col items-center gap-10">
-      <p class="font-roboto-serif rotate-[-0.5deg] text-[72px] px-6 bg-white shadow-[-4px_4px_0_0_#C93,_-8px_8px_0_0_#FFF]">Gaya Yutaka</p>
+    <div class="flex-1 flex flex-col items-start md:gap-10 mobile:gap-0">
+      <p class="font-roboto-serif rotate-[-0.5deg] md:text-[72px] mobile:text-[32px] px-6 bg-white shadow-[-4px_4px_0_0_#C93,_-8px_8px_0_0_#FFF]">Gaya Yutaka</p>
       <p class="font-roboto-serif text-2xl bg-white p-3 shadow-[11px_11px_0_0_##936B19]">
         Kami percaya bahwa fashion bukan hanya soal penampilan, tapi tentang bagaimana kita terhubung. Lahir dari semangat keselarasan dalam berbusana, Yutaka menghadirkan fashion yang serasi, simpel, dan keren untuk siapa pun yang ingin mengekspresikan kebersamaan melalui gaya, baik bersama pasangan, sahabat, maupun diri sendiri.
       </p>
@@ -39,44 +39,50 @@
   </section>
 
   <div class="bg-white">
-    <section class="w-full h-[50vh] flex">
-      <div class="flex-1 h-full p-6">
-        <p class="w-[500px] font-volkhov text-5xl leading-16">Modern dalam Sentuhan Tradisi</p>
-        <p class="font-roboto-serif text-2xl">
+    <section class="w-full h-[50vh] flex md:flex-row mobile:flex-col md:px-0 mobile:px-6">
+      <div class="flex-1 h-full md:p-6 mobile:p-0 md:py-0 mobile:py-6">
+        <p class="md:w-[500px] mobile:w-[80%] font-volkhov md:text-5xl mobile:text-3xl md:leading-16 mobile:leading-8">Modern dalam Sentuhan Tradisi</p>
+        <p class="font-roboto-serif md:text-2xl mobile:text-[20px] md:mt-0 mobile:mt-3">
           Nama "Wastra" terinspirasi dari kekayaan budaya tekstil Indonesia, yang kami hadirkan kembali dalam nuansa modern. Wastra memadukan kepraktisan berpakaian dengan sentuhan keunikan pribadi. Setiap desain yang kami buat agar kamu bisa tampil stylish setiap hari, tanpa kehilangan jati diri.
         </p>
       </div>
-      <div class="flex-1 h-full p-2">
-        <img class="size-full" src="/image/model_about2.png" alt="">
+      <div class="flex-1 h-full md:p-2 mobile:p-0">
+        <img class="size-full object-cover" src="/image/model_about2.png" alt="">
       </div>
     </section>
 
-    <section class="bg-white w-full h-[150vh] grid grid-cols-6 gap-3 mt-[100px]">
-      <div class="w-full h-full row-span-4 col-span-2">
+    <section class="bg-white w-full md:h-[150vh] mobile:h-[170vh] grid md:grid-cols-6 mobile:grid-cols-2 gap-3 mt-[100px] md:p-0 mobile:p-6">
+      <div class="w-full h-full row-span-4 col-span-2 md:block mobile:hidden">
         <img class="size-full object-cover" src="/image/gallery1.png" alt="">
       </div>
-      <div class="w-full h-full row-span-2 col-span-1">
+      <div class="w-full h-full row-span-2 col-span-1 md:block mobile:hidden">
         <img class="size-full object-cover" src="/image/gallery2.png" alt="">
       </div>
-      <div class="w-full h-full row-span-2 col-span-3 flex flex-col items-end gap-3 bg-white p-6">
-        <p class="w-[60%] font-volkhov text-4xl text-right">Gaya yang
+      <div class="w-full h-full md:row-span-2 mobile:row-span-1 md:col-span-3 mobile:col-span-2 flex flex-col items-end gap-3 bg-white md:p-6 mobile:p-0">
+        <p class="md:w-[60%] mobile:w-full font-volkhov text-4xl text-right">Gaya yang
           Menyatukan Kita</p>
-        <p class="w-[85%] font-roboto-serif text-[1rem] text-right">Kami bukan sekadar brand pakaian kami adalah cara baru untuk mengekspresikan kekompakan, kebersamaan, dan gaya yang ringan namun bermakna. Karena di Wastra, gaya kamu dan orang terdekatmu selalu satu nada.</p>
+        <p class="md:w-[85%] mobile:w-full font-roboto-serif text-[1rem] text-right">Kami bukan sekadar brand pakaian kami adalah cara baru untuk mengekspresikan kekompakan, kebersamaan, dan gaya yang ringan namun bermakna. Karena di Wastra, gaya kamu dan orang terdekatmu selalu satu nada.</p>
       </div>
-      <div class="w-full h-full row-span-2 col-span-2 bg-white">
+      <div class="w-full h-full md:row-span-2 mobile:row-span-3 md:col-span-2 mobile:col-span-1 bg-white">
         <img class="size-full object-cover" src="/image/gallery3.png" alt="">
       </div>
-      <div class="w-full h-full row-span-2 col-span-2">
+      <div class="w-full h-full md:row-span-2 mobile:row-span-3 md:col-span-2 mobile:col-span-1">
         <img class="size-full object-cover" src="/image/gallery4.png" alt="">
       </div>
-      <div class="w-full h-full row-span-2 col-span-4 bg-white flex flex-col gap-3 items-center justify-center">
-        <p class="font-volkhov text-4xl text-center">Tampil Berbeda Tetap Seirama</p>
+      <div class="w-full h-full md:row-span-2 mobile:row-span-1 md:col-span-4 mobile:col-span-2 bg-white flex flex-col gap-3 items-center justify-center">
+        <p class="font-volkhov md:text-4xl mobile:text-[32px] text-center">Tampil Berbeda Tetap Seirama</p>
         <p class="w-[90%] font-roboto-serif text-[1rem] text-center">Kami membayangkan dunia di mana tampil kompak tidak berarti harus sama tetapi mencerminkan harmoni dalam hubungan dan ekspresi diri. Itulah filosofi Wastra: tenang, stylish, dan selalu terkoneksi.</p>
       </div>
-      <div class="w-full h-full row-span-2 col-span-2">
+      <div class="w-full md:h-full mobile:h-[150px] md:row-span-2 mobile:row-span-1 md:col-span-2 mobile:col-span-2">
         <img class="size-full object-cover" src="/image/gallery5.png" alt="">
       </div>
     </section>
+
+    <div class="relative w-full md:h-[300px] mobile:h-[100px] md:ps-[120px] mobile:ps-[12px] bg-[#FFC34B] md:mt-24 mobile:mt-[250px]">
+      <img class="md:w-[400px] mobile:w-[150px] absolute right-0 bottom-0" src="/image/chibi1.png" alt="">
+      <p class="absolute top-1/2 -translate-y-1/2 font-helvetica text-white md:text-5xl mobile:text-[15px] w-[70%]"><span class="font-bold">APAPUN</span> DAN DIMANAPUN <span class="font-bold">WASTRA</span> PUNYA 
+        <span class="font-bold">JAWABANNYA</span></p>
+    </div>
   </div>
 
   <footer class="w-full h-[300px] bg-white px-11 mt-14">

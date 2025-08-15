@@ -25,6 +25,11 @@
     src: url("../font/Helvetica.ttf");
 }
 
+@font-face {
+    font-family: "helveticalight";
+    src: url("../font/helvetica-light-587ebe5a59211.ttf");
+}
+
 @theme {
     --breakpoint-mobile: 20rem;
     --font-crimson: "crimsonPro", sans-serif;
@@ -32,6 +37,7 @@
     --font-roboto-serif: "robotoSerif";
     --font-volkhov: "volkhov", serif;
     --font-helvetica: "helvetica", sans-serif;
+    --font-helvetica-light: "helveticalight", sans-serif;
     --color-grey-1: #EDEDED;
     --color-golden-1: #CC9933;
 }
