@@ -35,6 +35,11 @@
     src: url("../font/Inter-VariableFont_opsz,wght.ttf");
 }
 
+@font-face {
+    font-family: "bricolage-grotesque"
+    srcL url("../font/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf");
+}
+
 @theme {
     --breakpoint-mobile: 20rem;
     --font-crimson: "crimsonPro", sans-serif;
@@ -44,6 +49,7 @@
     --font-helvetica: "helvetica", sans-serif;
     --font-helvetica-light: "helveticalight", sans-serif;
     --font-inter: "inter", sans-serif;
+    --font-bricolage-grotesque: "bricolage-grotesque", sans-serif;
     --color-grey-1: #EDEDED;
     --color-golden-1: #CC9933;
 }
