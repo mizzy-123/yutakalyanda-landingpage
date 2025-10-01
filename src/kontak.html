@@ -6,6 +6,44 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Alert success -->
+   <div id="alert-success" class="fixed z-[200] top-[110px] right-[-1000px] flex items-center w-[480px] p-3 bg-grey-2 gap-2.5 rounded-[20px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-all duration-300 ease-in-out">
+    <a class="absolute top-[-10px] right-[-10px] size-[30px] flex justify-center items-center bg-grey-2 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] rounded-[8px]" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#AC7D20"/>
+      </svg>
+    </a>
+    <div class="p-[17px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <path d="M47.25 24C47.25 36.8407 36.8407 47.25 24 47.25C11.1593 47.25 0.75 36.8407 0.75 24C0.75 11.1593 11.1593 0.75 24 0.75C36.8407 0.75 47.25 11.1593 47.25 24ZM21.3107 36.3107L38.5607 19.0607C39.1464 18.4749 39.1464 17.5252 38.5607 16.9394L36.4394 14.8181C35.8537 14.2323 34.9039 14.2323 34.318 14.8181L20.25 28.8861L13.682 22.318C13.0962 21.7323 12.1464 21.7323 11.5606 22.318L9.43931 24.4393C8.85356 25.0251 8.85356 25.9748 9.43931 26.5606L19.1893 36.3106C19.7752 36.8964 20.7248 36.8964 21.3107 36.3107Z" fill="#AC7D20"/>
+      </svg>
+    </div>
+    <div>
+      <p class="font-inter text-golden-2 text-2xl font-bold">Pesan Berhasil Terkirim!</p>
+      <p class="font-inter text-golden-2 text-[16px] ">Terima kasih! Pesan Anda sudah kami terima.</p>
+    </div>
+   </div>
+
+   <!-- Alert failed -->
+   <div id="alert-danger" class="fixed z-[200] top-[110px] right-[-1000px] flex items-center w-[480px] p-3 bg-pink-1 gap-2.5 rounded-[20px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-all duration-300 ease-in-out">
+    <a class="absolute top-[-10px] right-[-10px] size-[30px] flex justify-center items-center bg-pink-1 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] rounded-[8px]" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#ED5858"/>
+      </svg>
+    </a>
+    <div class="p-[17px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <path d="M24 0C10.7419 0 0 10.7419 0 24C0 37.2581 10.7419 48 24 48C37.2581 48 48 37.2581 48 24C48 10.7419 37.2581 0 24 0Z" fill="#ED5858"/>
+        <path d="M35.8232 14.5939C35.9209 14.4963 35.9209 14.338 35.8232 14.2404L33.7596 12.1768C33.662 12.0791 33.5037 12.0791 33.4061 12.1768L24.1768 21.4061C24.0791 21.5037 23.9209 21.5037 23.8232 21.4061L14.5939 12.1768C14.4963 12.0791 14.338 12.0791 14.2404 12.1768L12.1768 14.2404C12.0791 14.338 12.0791 14.4963 12.1768 14.5939L21.4061 23.8232C21.5037 23.9209 21.5037 24.0791 21.4061 24.1768L12.1768 33.4061C12.0791 33.5037 12.0791 33.662 12.1768 33.7596L14.2404 35.8232C14.338 35.9209 14.4963 35.9209 14.5939 35.8232L23.8232 26.5939C23.9209 26.4963 24.0791 26.4963 24.1768 26.5939L33.4061 35.8232C33.5037 35.9209 33.662 35.9209 33.7596 35.8232L35.8232 33.7596C35.9209 33.662 35.9209 33.5037 35.8232 33.4061L26.5939 24.1768C26.4963 24.0791 26.4963 23.9209 26.5939 23.8232L35.8232 14.5939Z" fill="white" stroke="white" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div>
+      <p class="font-inter text-red-1 text-2xl font-bold">Pesan Gagal terkirim!</p>
+      <p class="font-inter text-red-1 text-[16px] ">Terjadi kendala saat mengirim pesan atau lengkapi data pada formulir. </p>
+    </div>
+   </div>
+
   <header class="w-full fixed top-0 left-0 z-[100] bg-white h-[100px] flex items-center justify-between px-[3%] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[10px] after:bg-transparent after:shadow-[0px_4px_4px_0px_#00000040]">
     <a class="lg:hidden" id="navbar-active" href="#">
       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
@@ -172,14 +210,15 @@
       </div>
       <div class="w-full flex justify-center items-start gap-5 px-[10%]">
         <img width="500" class="md:block mobile:hidden" src="../image/frame_kontak.png" alt="">
-        <form class="w-full" action="">
+        <form id="myForm" class="w-full">
           <div class="w-full flex flex-col gap-6 px-2">
           
-            <input type="text" class="w-full rounded-[8px] bg-[#EFEFEF] md:px-6 mobile:px-[12px] md:py-[30px] mobile:py-[18px] placeholder:font-inter placeholder:text-black md:placeholder:text-[20px] mobile:placeholder:text-[14px] md:text-[20px] mobile:text-[14px] font-inter focus:outline-none focus:border-none text-black" placeholder="Nama lengkap">
+            <input type="text" name="name" class="w-full rounded-[8px] bg-[#EFEFEF] md:px-6 mobile:px-[12px] md:py-[30px] mobile:py-[18px] placeholder:font-inter placeholder:text-black md:placeholder:text-[20px] mobile:placeholder:text-[14px] md:text-[20px] mobile:text-[14px] font-inter focus:outline-none focus:border-none text-black" placeholder="Nama lengkap">
           
-            <input type="email" class="w-full rounded-[8px] bg-[#EFEFEF] md:px-6 mobile:px-[12px] md:py-[30px] mobile:py-[18px] placeholder:font-inter placeholder:text-black md:placeholder:text-[20px] mobile:placeholder:text-[14px] md:text-[20px] mobile:text-[14px] font-inter focus:outline-none focus:border-none text-black" placeholder="Email">
+            <input type="email" name="email" class="w-full rounded-[8px] bg-[#EFEFEF] md:px-6 mobile:px-[12px] md:py-[30px] mobile:py-[18px] placeholder:font-inter placeholder:text-black md:placeholder:text-[20px] mobile:placeholder:text-[14px] md:text-[20px] mobile:text-[14px] font-inter focus:outline-none focus:border-none text-black" placeholder="Email">
 
             <textarea 
+            name="pesan"
   class="w-full md:min-h-[232px] mobile:min-h-[128px] rounded-[8px] bg-[#EFEFEF] md:px-6 mobile:px-[12px] md:py-[30px] mobile:py-[18px] 
          placeholder:font-inter placeholder:text-black md:placeholder:text-[20px] mobile:placeholder:text-[14px] 
          md:text-[20px] mobile:text-[14px] font-inter focus:outline-none focus:border-none text-black 
@@ -299,5 +338,6 @@
   
   <script src="navbar.script.js"></script>
   <script src="faq.script.js"></script>
+  <script src="kontak.js"></script>
 </body>
 </html>
